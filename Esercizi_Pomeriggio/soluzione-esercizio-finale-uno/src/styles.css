@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.text-success{
+  color:green;
+}
+
+.text-danger{
+  color: red;
+}
+
+.text-warning{
+  font-style: italic;
+  color:orange;
+}
+
+.text-classic{
+  color: black;
+}

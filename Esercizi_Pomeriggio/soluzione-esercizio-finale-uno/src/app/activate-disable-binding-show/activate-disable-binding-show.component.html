@@ -1,0 +1,5 @@
+<input [(ngModel)]="text" type="text">
+<br/>
+<button (click)="changeVisualization()">Mostra/Nascondi</button>
+
+<p [class.hideContent]="hideNow">{{text}}</p>

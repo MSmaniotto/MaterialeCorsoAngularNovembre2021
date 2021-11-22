@@ -1,0 +1,11 @@
+<input #myInput type="text">
+<br/>
+<button (click)="sendData(myInput.value)">Invia</button>
+<br/>
+<button (click)="changeClass('text-success')">Successo</button>
+<br/>
+<button (click)="changeClass('text-danger')">Danger</button>
+<br/>
+<button (click)="changeClass('text-warning')">Warning</button>
+
+<p [class]="activeClass">{{text}}</p>
