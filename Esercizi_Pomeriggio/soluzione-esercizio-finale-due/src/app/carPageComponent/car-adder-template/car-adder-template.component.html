@@ -1,0 +1,32 @@
+<form #formModelCheck="ngForm">
+  <div class="spacing">
+    <label for="factory">Marchio:</label>
+    <input [(ngModel)]="formModel.factory" type="text" id="factory" required name="factory"
+     #factory="ngModel"/>
+    <span *ngIf="!factory.valid && !factory.pristine" class="errorSpan">
+      Il marchio inserito non è valido o non è presente</span>
+  </div>
+  <div class="spacing">
+    <label class="rightSpaceName" for="name">Nome:</label>
+    <input [(ngModel)]="formModel.name" type="text" id="name" required name="name"
+     #name="ngModel"/>
+    <span class="errorSpan" [hidden]="name.valid||name.pristine">
+      Il nome inserito non è valido o non è presente</span>
+  </div>
+  <div class="spacing">
+    <label class="rightSpacePower" for="power">Potenza:</label>
+    <input [(ngModel)]="formModel.power" type="text" id="power" required name="power"
+     #power="ngModel"/>
+    <span class="errorSpan" *ngIf="!power.valid && !power.pristine">
+      La potenza inserita non è valido o non è presente</span>
+  </div>
+  <div class="spacing">
+    <label class="rightSpaceType" for="type">Tipo:</label>
+    <input [(ngModel)]="formModel.type" type="text" id="type" required name="type"
+     #type="ngModel"/>
+    <span class="errorSpan" [hidden]="type.valid||type.pristine">
+      La tipologia inserita non è valido o non è presente</span>
+  </div>
+
+  <button type="button" class="ml-3" [disabled]="!formModelCheck.valid" (click)="sendData()">Invia</button>
+</form>

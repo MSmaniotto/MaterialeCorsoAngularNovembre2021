@@ -1,0 +1,8 @@
+<!--app-car-adder></app-car-adder-->
+<app-car-adder-template></app-car-adder-template>
+<div class="mt-3">
+  <h1 *ngIf="!carList.length">Nessuna automobile presente</h1>
+  <div *ngFor="let car of carList" class="topMargin">
+    <app-car-details [parentData]="car"></app-car-details>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<form [formGroup]="myForm">
+    <div class="spacing">
+      <label for="factory">Marchio:</label>
+      <input type="text" id="factory" required
+        formControlName="factory"/>
+      <span class="errorSpan" [hidden]="myForm.controls.factory.valid||myForm.controls.factory.pristine">
+        Il marchio inserito non è valido o non è presente</span>
+    </div>
+    <div class="spacing">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required
+        formControlName="name"/>
+      <span class="errorSpan" [hidden]="myForm.controls.name.valid||myForm.controls.name.pristine">
+        Il nome inserito non è valido o non è presente</span>
+    </div>
+    <div class="spacing">
+      <label for="power">Potenza:</label>
+      <input type="text" id="power" required
+        formControlName="power"/>
+      <span class="errorSpan" [hidden]="myForm.controls.power.valid||myForm.controls.power.pristine">
+        La potenza specificata non è valida o è assente</span>
+    </div>
+    <div class="spacing">
+      <label for="type">Tipologia:</label>
+      <input type="text" id="type" required
+        formControlName="type"/>
+      <span class="errorSpan" [hidden]="myForm.controls.type.valid||myForm.controls.type.pristine">
+        Il tipo di veicolo inserito non è valido o non è presente</span>
+    </div>
+    <button type="button" class="ml-3" [disabled]="!myForm.valid" (click)="sendData()">Invia</button>
+  </form>

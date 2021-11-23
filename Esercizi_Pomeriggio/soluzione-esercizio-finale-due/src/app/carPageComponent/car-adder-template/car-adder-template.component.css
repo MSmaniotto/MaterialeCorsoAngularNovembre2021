@@ -1,0 +1,35 @@
+.spacing{
+  padding: 1em
+}
+
+#factory{
+  margin-left: 1em;
+}
+
+#name{
+  margin-left: 1.8em;
+}
+
+#power{
+  margin-left: 1em;
+}
+
+#type{
+  margin-left: 0.4em;
+}
+
+.errorSpan{
+  color: red;
+}
+
+.rightSpaceType{
+  margin-right: 2.0em;
+}
+
+.rightSpaceName{
+  margin-right: 0.3em;
+}
+
+.rightSpacePower{
+  margin-right: 0.2em;
+}
