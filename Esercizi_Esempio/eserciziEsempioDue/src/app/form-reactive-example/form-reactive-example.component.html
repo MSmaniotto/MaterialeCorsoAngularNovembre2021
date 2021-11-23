@@ -1,0 +1,21 @@
+<form [formGroup]="myForm">
+  <div class="spacing">
+    <label for="txtNome">Nome</label>
+    <input type="text" id="txtNome" formControlName="txtNome"/>
+    <span [hidden]="myForm.controls.txtNome.valid || myForm.controls.txtNome.pristine">
+      Il nome è obbligatorio e non può superare i 10 caratteri!
+    </span>
+  </div>
+  <div class="spacing">
+    <label for="txtCognome">Cognome</label>
+    <input type="text" id="txtCognome" formControlName="txtCognome"/>
+  </div>
+  <div class="spacing">
+    <label for="txtEta">Età</label>
+    <input type="number" id="txtEta" formControlName="txtEta"/>
+    <span [hidden]="myForm.controls.txtEta.valid || myForm.controls.txtEta.pristine">
+        L'età va specificata in modo corretto
+      </span>
+  </div>
+  <button type="button" (click)="inviaForm()">Invia</button>
+</form>

@@ -1,0 +1,15 @@
+.spacing{
+    padding: 1em
+}
+
+#txtNome{
+    margin-left: 2.4em;
+}
+
+#txtCognome{
+    margin-left: 0.5em;
+}
+
+#txtEta{
+    margin-left: 3.6em;
+}

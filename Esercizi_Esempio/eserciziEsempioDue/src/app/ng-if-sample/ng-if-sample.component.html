@@ -1,0 +1,17 @@
+<h2 *ngIf="bool; else elseBlock">
+    This is a sentence
+</h2>
+
+<ng-template #elseBlock>
+    <h2> You can't see the sentence </h2>
+</ng-template>
+
+<div *ngIf="bool; then pleasedBlock; else sickBlock"></div>
+
+<ng-template #pleasedBlock>
+    <h2>Hello there</h2>
+</ng-template>
+
+<ng-template #sickBlock>
+    <h2>Stay away from me!</h2>
+</ng-template>

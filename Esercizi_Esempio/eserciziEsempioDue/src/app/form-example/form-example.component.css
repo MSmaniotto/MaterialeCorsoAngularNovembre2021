@@ -1,0 +1,15 @@
+.spacing{
+    padding: 1em
+}
+
+#nome{
+    margin-left: 2.4em;
+}
+
+#cognome{
+    margin-left: 0.5em;
+}
+
+#eta{
+    margin-left: 3.6em;
+}
