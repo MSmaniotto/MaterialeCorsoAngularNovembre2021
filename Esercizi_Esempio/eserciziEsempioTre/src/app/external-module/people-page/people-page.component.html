@@ -1,0 +1,8 @@
+<div *ngIf="error">
+  <h1>Ops! C'è stato un errore...</h1>
+  <h2>{{error}}</h2>
+</div>
+
+<ul *ngFor="let person of people">
+  <li>{{person.name}} - {{person.age}}</li>
+</ul>

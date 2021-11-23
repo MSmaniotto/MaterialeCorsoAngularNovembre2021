@@ -1,0 +1,12 @@
+<div *ngIf="error">
+    <h1>Ops! C'è stato un errore...</h1>
+    <h2>{{error}}</h2>
+</div>
+  
+<ul *ngFor="let meal of food">
+    <li>{{meal.name}}
+      <ul *ngFor="let ingredient of meal.ingredients">
+        <li>- {{ingredient}}</li>
+      </ul>
+    </li>
+</ul>
