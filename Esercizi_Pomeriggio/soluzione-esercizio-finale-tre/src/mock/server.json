@@ -1,0 +1,31 @@
+{
+	"people":[
+		{
+			"id":"1",
+			"name":"Andrea",
+			"age":"35"
+		},
+		{
+			"id":"2",
+			"name":"Marco",
+			"age":"45"
+		},
+		{
+			"id":"3",
+			"name":"Giulio",
+			"age":"55"
+		}
+	],
+	"food":[
+		{
+			"id":"1",
+			"name":"pizza",
+        	"ingredients":["tomatoes","cheese"]
+		},
+		{
+			"id":"2",
+			"name":"hamburger",
+        	"ingredients":["ham","cheese", "salad","tomatoes"]
+		}
+	]
+}
